@@ -1,0 +1,29 @@
+<div id="navigation" [style.background]= 'isXvisible ? "transparent" : "rgba(14, 41, 15, 0.5)"' >
+  <div class="container">
+  <div class="logo" (click)="navig('home')">
+    <img src="../../../favicon.ico" alt="">
+  </div>
+  <ul *ngIf="!isBurger">
+    <li><a (click)="navig('home')"  [class.active]='current === "home"'><span style="width: 1px;height: 1px;">HOME</span> </a></li>
+    <li><a (click)="navig('about')" [class.active]='current === "about"' ><span>ABOUT ME</span></a></li>
+    <li><a (click)="navig('portfolio')" [class.active]='current === "portfolio"'><span>PORTFOLIO</span></a></li>
+    <li><a (click)="navig('contact')" [class.active]='current === "contact"'><span>CONTACT</span></a></li>
+  </ul>
+
+  <a class="menu" (click)=showMenu() *ngIf="isBurger">
+    <i class="fa fa-bars" *ngIf="!isXvisible"></i>
+    <i class="fa fa-times" *ngIf="isXvisible"></i>
+  </a>
+</div>
+</div>
+
+<div class="tabletW" *ngIf="isXvisible && isBurger">
+  <div>
+    <ul >
+      <li><a (click)="navig('home')"  [class.active]='current === "home"'><span style="width: 1px;height: 1px;">HOME</span> </a></li>
+      <li><a (click)="navig('about')" [class.active]='current === "about"' ><span>ABOUT ME</span></a></li>
+      <li><a (click)="navig('portfolio')" [class.active]='current === "portfolio"'><span>PORTFOLIO</span></a></li>
+      <li><a (click)="navig('contact')" [class.active]='current === "contact"'><span>CONTACT</span></a></li>
+    </ul>
+  </div>
+</div>

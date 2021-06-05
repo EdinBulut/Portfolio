@@ -1,0 +1,64 @@
+.container {
+  scroll-snap-type: y  proximity;
+  overflow-y: initial;
+  width: 100%;
+  // height: 100%;
+  // height: 100vh;
+  transition: all 1s;
+  // scroll-behavior: smooth;
+  // margin: 0;
+  // scrollbar-width: none;
+  // box-sizing: content-box;
+  scroll-padding-top: 10px;
+
+  section.content {
+    // background: #57606f url('../assets/images/bckg-image.jpg') no-repeat center center / cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    div {
+
+      margin: 8em 0;
+    }
+    box-sizing: border-box;
+    // padding: 3em 0;
+    // padding: 0 6rem;
+    scroll-snap-align: start;
+    // overflow-y: scroll;
+  }
+  // section.content.WgtH {
+  //   height: 100vw;
+  // }
+  #portfolio {
+    justify-content: flex-start;
+    // padding-bottom: 1rem;
+  }
+  #contact {
+    height: 100vh;
+    justify-content: flex-start;
+  }
+  #home {
+    padding: 0;
+  }
+}
+
+
+
+// @media (max-width:992px){
+  // #about{
+  //   height: 180vh;
+  // }
+  // section.content.WgtH {
+  //   height: 180vw;
+  // }
+// }
+// @media (max-width:350px){
+//   #about{
+//     height: 240vh;
+//   }
+  // section.content.WgtH {
+  //   height: 240vw;
+  // }
+// }

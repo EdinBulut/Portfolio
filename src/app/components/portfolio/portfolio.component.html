@@ -1,0 +1,303 @@
+<div style="margin-top: 8rem; margin-bottom: 6rem;">
+  <h1 style="text-align: center; margin-bottom: 0;">Portfolio</h1>
+  
+  <swiper [config]="config">
+    <div class="swiper-wrapper">
+      
+      <!-- /////////// -->
+      <div class="swiper-slide">
+        <div class='content'>
+          <div class="bkg-image" style="background-image: url('../../../assets/images/tvshowsandmovies.jpg');">
+            <div style="display: flex;  flex-direction: column; justify-content: space-between; width: 100%;">
+              <div style="display: flex; height: 9em; align-items: center; justify-content: center;">
+                <h3>TV Shows and Movies</h3>
+              </div>
+              <div class="visit">
+                <a class="btn btn-outline-danger" title="Github source"
+                  href='https://github.com/EdinBulut/TVshowsAndMovies' target='_blank'>
+                  <i class="fa fa-github"></i>
+                </a>
+                <a class="btn btn-outline-danger" title="Visit page" href='http://tvshowsandmovies-5d3ba.web.app'
+                  target='_blank'>
+                  <img src="../../../assets/images/world-wide-web.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="body">
+
+            <div class="technologies">
+              <div class="wrapper">
+                <img src="../../../assets/images/angular.png" title="Angular">
+              </div>
+              <div class="wrapper">
+                <img src="../../../assets/images/sass.png" title="SASS">
+              </div>
+              <div class="wrapper">
+                <p title="REST API">REST API</p>
+              </div>
+              <div class="wrapper">
+                <img src="../../../assets/images/typescript.png" title="Typescript">
+              </div>
+            </div>
+
+            <div class="description">
+              When the app loads, the TV SHOWS tab is selected.
+              <br><br>
+              Clicking on a tab loads the top 10 MOVIES/TV SHOWS depending on the selected tab. You have option to show
+              MOVIES/TV SHOWS results in gallery view or in a list view. When the app loads, gallery view is selected.
+              <br><br>
+              The search field is live and react to any change in the input field. The search is performed only when
+              there are 3 or more characters in the search bar. When there are less than 3 characters in the search bar,
+              the content revert back to the top 10 MOVIES/TV SHOWS. When the search is performed, results appear under
+              the search box.
+              <br><br>
+              Switching between tabs while searching trigger the search again with the same search term for the selected
+              tab and update the results. When the user clicks on a specific MOVIE/TV SHOW, he is taken to the details
+              view.
+              <br><br>
+              User can be taken to the details view if he navigate to https://tvshowsandmovies-5d3ba.web.app/MOVIE_ID or
+              https://tvshowsandmovies-5d3ba.web.app/tvshow/TVSHOW_ID <br>
+              (for example: if he navigate to <a href="http://tvshowsandmovies-5d3ba.web.app/movie/238"
+                target="_blank">http://tvshowsandmovies-5d3ba.web.app/movie/238</a> he
+              will be taken to the detailed view of the Godfather). The Detailed View of the Movie/TV Show shows the
+              cover image and in case of Movies/TV Shows which have a trailer should show the trailer video instead of
+              the cover image. Next to/below the image/trailer some basic information regarding the selected Movie/TV
+              Show are shown.
+              <br><br>
+              The Back button return the user back to where he was and with the same state before clicking to see more
+              information about a Movie/TV Show (meaning that the correct tab is selected and if the user came from
+              search - the search result with the search term is there).
+              <br><br>
+              If user navigate to page that doesn't exist 'Page not found' will be shown.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /////////// -->
+
+      <div class="swiper-slide">
+        <div class='content'>
+          <div class="bkg-image" style="background-image: url('../../../assets/images/videoplayer.jpg');">
+            <div style="display: flex;  flex-direction: column; justify-content: space-between; width: 100%;">
+              <div style="display: flex; height: 9em; align-items: center; justify-content: center;">
+                <h3>Video List (MEAN App)</h3>
+              </div>
+              <div class="visit">
+                <a class="btn btn-outline-danger" title="Github source"
+                  href='https://github.com/EdinBulut/VideoList-MEAN' target='_blank'>
+                  <i class="fa fa-github"></i>
+                </a>
+                <a class="btn btn-outline-danger" title="Visit page" 
+                href='https://videolist-mean.herokuapp.com/videos' target='_blank'>
+                  <img src="../../../assets/images/world-wide-web.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="body">
+
+            <div class="technologies">
+              <div class="wrapper">
+                <img src="../../../assets/images/mongo.png" title="Mongo DB">
+              </div>
+              <div class="wrapper">
+                <img src="../../../assets/images/node.svg" title="Node.js">
+              </div>
+              <div class="wrapper">
+                <img src="../../../assets/images/angular.png" title="Angular">
+              </div>
+              <div class="wrapper">
+                <img src="../../../assets/images/typescript.png" title="Typescript">
+              </div>
+            </div>
+
+            <div class="description">
+              MEAN stack App where you can:<br>
+
+              - add new video, <br>
+              - edit or delete existing video,<br>
+              - search for a specific video,<br>
+              - watch selected video<br><br>
+
+              When you made some of the above changes you'll get exported json file with all videos and with every new
+              changes, json file will be updated. Json file will be saved in JSON folder as videos.json.
+              (.../VideoList-MEAN/JSON/videos.json)<br><br>
+
+              When the app loads, you will get page which is divided in two parts:<br>
+              - part with details of selected video on left<br>
+              - part with list of videos on right<br><br>
+
+              On left part, title and description of video are showed and you can watch selected video.<br>
+              When you click on edit button which is on the right side of the title, you can change video details or
+              delete video.<br><br>
+
+              On right part, pagination is included. It shows 5 videos per page. When you click on one of the videos
+              from list, left part is immediatelly changed with details of new selected video.<br><br>
+
+              Above the list there is button "+ New Video". When you click it, form for adding new video will be showed
+              instead of video details part.<br><br>
+
+              On adding or editing video Template Driven Form is used.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /////////// -->
+
+      <div class="swiper-slide">
+        <div class='content'>
+          <div class="bkg-image" style="background-image: url('../../../assets/images/coding-challenges.jpg');">
+            <div style="display: flex;  flex-direction: column; justify-content: space-between; width: 100%;">
+              <div style="display: flex; height: 9em; align-items: center; justify-content: center;">
+                <h3>JS Coding Challenges</h3>
+              </div>
+              <div class="visit">
+                <a class="btn btn-outline-danger" title="Github source"
+                  href='https://github.com/EdinBulut/Javascript-Coding-Challenges' target='_blank'>
+                  <i class="fa fa-github"></i>
+                </a>
+                <a class="btn btn-outline-danger" title="Visit page"
+                  href='https://edinbulut.github.io/Javascript-Coding-Challenges/' target='_blank'>
+                  <img src="../../../assets/images/world-wide-web.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="body" >
+
+            <div class="technologies">
+              <div class="wrapper">
+                <img src="../../../assets/images/javascript.png" title="HTML 5">
+              </div>
+            </div>
+
+            <div class="description">
+              I have finished more than 150 Javascript tasks on 
+              <a href="https://www.codewars.com/users/Edin%20Bulut" target="_blank">Codewars</a> 
+              and I am in top 7% Javascript developers in this large community.
+              These coding challenges helped me a lot to level up my Javascript skills.
+              When I find time I put some of solutions on my page.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /////////// -->
+
+      <div class="swiper-slide">
+        <div class='content'>
+          <div class="bkg-image" style="background-image: url('../../../assets/images/grandmas-store.jpg');">
+            <div style="display: flex;  flex-direction: column; justify-content: space-between; width: 100%;">
+              <div style="display: flex; height: 9em; align-items: center; justify-content: center;">
+                <h3>Grandma's Store</h3>
+              </div>
+              <div class="visit">
+                <a class="btn btn-outline-danger" title="Github source"
+                  href='https://github.com/EdinBulut/Shop-Grandma-s-store' target='_blank'>
+                  <i class="fa fa-github"></i>
+                </a>
+                <a class="btn btn-outline-danger" title="Visit page"
+                  href='https://edinbulut.github.io/Shop-Grandma-s-store/' target='_blank'>
+                  <img src="../../../assets/images/world-wide-web.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="body" >
+
+            <div class="technologies">
+              <div class="wrapper">
+                <img src="../../../assets/images/html-5.png" title="HTML 5">
+              </div>
+              <div class="wrapper">
+                <img src="../../../assets/images/css-3.png" title="CSS 3">
+              </div>
+            </div>
+
+            <div class="description">
+              <!-- One of my first projects where I was improving my HTML and CSS skills. <br><br> -->
+              Landing page where you can find your favourite cakes and sweets. <br>
+              It has responsive design with very nice layout. <br>
+              You can find more details if you click on 'Github source' button or 'Visit page' button.
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /////////// -->
+
+      <div class="swiper-slide">
+        <div class='content'>
+          <div class="bkg-image" style="background-image: url('../../../assets/images/registrated-users.JPG');">
+            <div style="display: flex;  flex-direction: column; justify-content: space-between; width: 100%;">
+              <div style="display: flex; height: 9em; align-items: center; justify-content: center;">
+                <h3>Registrated Users</h3>
+              </div>
+              <div class="visit">
+                <a class="btn btn-outline-danger" title="Github source"
+                  href='https://github.com/EdinBulut/Registrated-Users' target='_blank'>
+                  <i class="fa fa-github"></i>
+                </a>
+                <a class="btn btn-outline-danger" title="Visit page" href='https://user-registration-d9498.web.app'
+                  target='_blank'>
+                  <img src="../../../assets/images/world-wide-web.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="body">
+
+            <div class="technologies">
+              <div class="wrapper" title="Angular">
+                <img src="../../../assets/images/angular.png">
+              </div>
+              <div class="wrapper" title="SASS">
+                <img src="../../../assets/images/sass.png">
+              </div>
+              <div class="wrapper" title="Firebase">
+                <img src="../../../assets/images/firebase.png">
+              </div>
+              <div class="wrapper" title="Bulma">
+                <img src="../../../assets/images/bulma.png">
+              </div>
+              <div class="wrapper" title="Typescript">
+                <img src="../../../assets/images/typescript.png">
+              </div>
+            </div>
+
+            <div class="description">
+              Angular + Firebase project. <br>
+              Bulma - CSS library <br><br>
+
+              When the app loads, you are on the register page. You need to register or if you already have an account
+              you can log in.<br><br>
+
+              When registration is successfully done you are redirected to list of users page. <br>
+              You can't navigate to list of users page if you are not logged in and if you try to do that you will be
+              redirected to login <br>
+              page. Also if you are logged in, you are not able to navigate to login or register screen.<br><br>
+
+              On list of users page the search field is live and react to any change in the input field. When the search
+              is performed, results appear under the search box.<br><br>
+
+              When you click on a specific user you are taken to user details page where you can find more info about
+              that user. The Back button returns you back to list of users.<br><br>
+
+              If you navigate to page that doesn't exist 'Page not found' will be shown.
+            </div>
+          </div>
+        </div>
+        <!-- <div style="position: relative; bottom: 0; left: 0; width: 100%;height: 2rem; z-index: 1; "></div> -->
+      </div>
+      <!-- /////////// -->
+    
+
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </swiper>
+
+</div>

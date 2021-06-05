@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 8rem; 
+  margin-bottom: 6rem;
+}
+h1 {
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.content {
+  width: 40vw;
+}
+
+.form-control:hover,
+.form-control:focus, button.btn-outline-danger:hover{
+  box-shadow: 0 0 .5rem #fff, 0 0 1rem rgb(236, 121, 121) ;
+}
+
+button.btn-outline-danger {
+  margin-top: 1rem;
+  border-width: 2px;
+  // &:hover {
+  //   background-color: transparent;
+  // }
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+input, textarea, button {
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-shadow: 0 0 0.15rem #333;
+}
+
+@media (max-width:992px) {
+  .content {
+    width: 100% !important;
+  }
+}
+
+.error {
+  color: #dc3545;
+  margin: 0.2rem;
+}

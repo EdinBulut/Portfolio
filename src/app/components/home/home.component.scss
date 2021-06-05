@@ -1,0 +1,61 @@
+.tw {
+  border-right: .01em solid white;
+  margin: 0;
+  
+}
+
+.content {
+  // background: #57606f url('../assets/images/bckg-image.jpg') no-repeat center center / cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  
+  // padding: 0 3rem;
+  h1 {
+    // padding-top: 6rem;
+    font-size: 4em;
+  }
+
+  h1, h2 {
+    font-weight: 250;
+    margin: 0.4rem;
+    cursor: pointer;
+  }
+  h2 {
+    font-size: 2rem;
+    color: #ced6e0
+  }
+}
+
+
+
+
+
+
+@media(max-width: 1200px) {
+  .content h1 {
+    font-size: 4rem;
+  }
+}
+
+@media(max-width: 800px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .content h1  {
+    font-size: 3rem;
+  }
+}
+
+@media(max-width: 500px) {
+
+  .content h1  {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
